@@ -1,0 +1,36 @@
+{
+    "description": "MX3 Custom Buttom",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "identifiers": [
+                        {
+                            "product_id": 45091,
+                            "vendor_id": 1133
+                        }
+                    ],
+                    "type": "device_if"
+                }
+            ],
+            "from": {
+                "key_code": "tab",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command"
+                    ],
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "apple_vendor_keyboard_key_code": "mission_control",
+                    "modifiers": []
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
